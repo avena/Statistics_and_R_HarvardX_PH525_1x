@@ -4,8 +4,6 @@ library(rafalib)
 install.packages('swirl')
 library(swirl)
 
-
-version()
 # Exercício 02
 vetorValores <- c(2.23, 3.45, 1.87, 2.11, 7.33, 18.34, 19.23)
 media <- mean(vetorValores)
@@ -64,3 +62,12 @@ which(cars$dist == 85)
 # Ver a linha inteira:
 cars[which(cars$dist == 85), ]
 
+
+# Usando Markdown
+```{r}
+soma <- 0
+for (i in 1:25) {
+  soma <- soma + i^2
+}
+soma
+```
